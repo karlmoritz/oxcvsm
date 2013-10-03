@@ -3,15 +3,15 @@ oxcvsm
 
 Oxford Compositional Vector Space Models
 
-More Documentation will follow soon.
+Author: Karl Moritz Hermann
 
-=== Dependencies ===
+## Dependencies
 
 PugiXML (a recent version is included under src/pugi)
 Boost libraries
 Eigen library
 
-=== To get started ===
+## Getting started
 
 1. Install dependencies
 2. Adjust paths in Makefile
@@ -37,12 +37,12 @@ Wl  2359: 0.0438076 vs 0.0438076   9.99583 - 9.99583[0.636769]
           ERRORS          A(lbl)          A(rae)
                         0.972626         1.02926
 Bl  2360: 0.191106 vs 0.191106   9.99583 - 9.99583[0]
-total: 3.21547e-05 D/U/V/W/A/Wd/Wdr/Bd/Bdr/Wf/Wl/Bl 
+total: 3.21547e-05 D/U/V/W/A/Wd/Wdr/Bd/Bdr/Wf/Wl/Bl
 7.69128e-06 0 0 0 0 1.20855e-05 1.07516e-05 7.50228e-07 8.06919e-07 0 5.44982e-08 1.46649e-08
 train: src/common/finite_grad_check.cc:85: int finite_grad_check(Model&): Assertion `false' failed.
 Aborted (core dumped)
 
-=== Additional Information ===
+## Additional Information
 
 I will continue updating this package over the coming months. The code in here
 differs somewhat from the code used for the experiments in the ACL '13 paper as
@@ -54,3 +54,21 @@ my paper, as well as a re-implementation of the MV-RNN paper in Socher et al.
 
 Please use the features provided by Github for any questions and comments, so
 that any issues and solutions can be seen by everyone else as well.
+
+## Papers / Citation
+
+If you use this software package in your experiments and publish related work,
+please cite the following paper:
+
+@InProceedings{hermann-blunsom:2013:ACL2013,
+  author    = {Hermann, Karl Moritz  and  Blunsom, Phil},
+  title     = {The Role of Syntax in Vector Space Models of Compositional Semantics},
+  booktitle = {Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {August},
+  year      = {2013},
+  address   = {Sofia, Bulgaria},
+  publisher = {Association for Computational Linguistics},
+  pages     = {894--904},
+  url       = {http://www.aclweb.org/anthology/P13-1088}
+}
+
