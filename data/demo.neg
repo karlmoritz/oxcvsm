@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="candc.xml"?>
+
+<candc>
+<ccg>
+ <rule type="fa" cat="N">
+  <lf start="0" span="1" word="one" lemma="one" pos="CD" chunk="I-NP" entity="O" cat="N/N" />
+  <rule type="fa" cat="N">
+   <lf start="1" span="1" word="negative" lemma="negative" pos="JJ" chunk="I-NP" entity="O" cat="N/N" />
+   <lf start="2" span="1" word="sentence" lemma="sentence" pos="NN" chunk="I-NP" entity="O" cat="N" />
+  </rule>
+ </rule>
+</ccg>
+<ccg>
+ <rule type="fa" cat="NP[nb]">
+  <lf start="0" span="1" word="another" lemma="another" pos="DT" chunk="I-NP" entity="O" cat="NP[nb]/N" />
+  <rule type="fa" cat="N">
+   <lf start="1" span="1" word="negative" lemma="negative" pos="JJ" chunk="I-NP" entity="O" cat="N/N" />
+   <lf start="2" span="1" word="story" lemma="story" pos="NN" chunk="I-NP" entity="O" cat="N" />
+  </rule>
+ </rule>
+</ccg>
+<ccg>
+ <rule type="ba" cat="S[adj]">
+  <rule type="ba" cat="NP">
+   <rule type="ba" cat="NP">
+    <rule type="ba" cat="NP">
+     <lf start="0" span="1" word="something" lemma="something" pos="DT" chunk="I-NP" entity="O" cat="NP" />
+     <lf start="1" span="1" word="else" lemma="else" pos="RB" chunk="I-NP" entity="O" cat="NP\NP" />
+    </rule>
+    <rule type="fa" cat="NP\NP">
+     <lf start="2" span="1" word="that" lemma="that" pos="DT" chunk="I-NP" entity="O" cat="(NP\NP)/(S[dcl]\NP)" />
+     <rule type="fa" cat="S[dcl]\NP">
+      <lf start="3" span="1" word="is" lemma="be" pos="VBZ" chunk="I-VP" entity="O" cat="(S[dcl]\NP)/(S[adj]\NP)" />
+      <rule type="fa" cat="S[adj]\NP">
+       <lf start="4" span="1" word="really" lemma="really" pos="RB" chunk="I-ADJP" entity="O" cat="(S[adj]\NP)/(S[adj]\NP)" />
+       <lf start="5" span="1" word="bad" lemma="bad" pos="JJ" chunk="I-ADJP" entity="O" cat="S[adj]\NP" />
+      </rule>
+     </rule>
+    </rule>
+   </rule>
+   <rule type="lex" cat="NP\NP">
+    <lf start="6" span="1" word="bad" lemma="bad" pos="JJ" chunk="I-ADJP" entity="O" cat="S[adj]\NP" />
+   </rule>
+  </rule>
+  <lf start="7" span="1" word="bad" lemma="bad" pos="JJ" chunk="I-ADJP" entity="O" cat="S[adj]\NP" />
+ </rule>
+</ccg>
+<ccg>
+ <rule type="ba" cat="S[dcl]">
+  <rule type="lex" cat="NP">
+   <lf start="0" span="1" word="bad" lemma="bad" pos="JJ" chunk="I-NP" entity="O" cat="N" />
+  </rule>
+  <rule type="fa" cat="S[dcl]\NP">
+   <rule type="bx" cat="(S[dcl]\NP)/(S[adj]\NP)">
+    <lf start="1" span="1" word="is" lemma="be" pos="VBZ" chunk="I-VP" entity="O" cat="(S[dcl]\NP)/(S[adj]\NP)" />
+    <lf start="2" span="1" word="not" lemma="not" pos="RB" chunk="O" entity="O" cat="(S\NP)\(S\NP)" />
+   </rule>
+   <lf start="3" span="1" word="good" lemma="good" pos="JJ" chunk="I-ADJP" entity="O" cat="S[adj]\NP" />
+  </rule>
+ </rule>
+</ccg>
+<ccg>
+ <rule type="ba" cat="S[dcl]">
+  <rule type="lex" cat="NP">
+   <lf start="0" span="1" word="good" lemma="good" pos="JJ" chunk="I-ADJP" entity="O" cat="N" />
+  </rule>
+  <rule type="fa" cat="S[dcl]\NP">
+   <lf start="1" span="1" word="is" lemma="be" pos="VBZ" chunk="I-VP" entity="O" cat="(S[dcl]\NP)/(S[adj]\NP)" />
+   <lf start="2" span="1" word="bad" lemma="bad" pos="JJ" chunk="I-ADJP" entity="O" cat="S[adj]\NP" />
+  </rule>
+ </rule>
+</ccg>
+</candc>
