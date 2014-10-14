@@ -5,6 +5,14 @@ Oxford Compositional Vector Space Models
 
 Author: Karl Moritz Hermann
 
+# DEPRECATION NOTE
+
+Please note that there is an updated version of this code on Github:
+https://github.com/karlmoritz/bicvm .  That codebase does not contain all of the
+models from the 2013 ACL paper, but it is fairly simple to rebuild those as well
+as a myriad of others. If you want to extend any of this work, I would
+appreciate if you directed your efforts to that version of the code.
+
 ## Dependencies
 
 PugiXML (a recent version is included under src/pugi)
